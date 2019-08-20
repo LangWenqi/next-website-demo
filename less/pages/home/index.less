@@ -1,0 +1,268 @@
+.home-panel-banner {
+    .banner {
+        background: url("../../../static/home-banner-bg.png") no-repeat;
+        height: 708px;
+        margin-top: 270px;
+        background-size: cover;
+        position: relative;
+        .con {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            img {
+                position: absolute;
+            }
+            p {
+                position: absolute;
+                left: 15px;
+                top: 100px;
+                font-family: PingFangSC-Regular;
+                font-size: 24px;
+                color: #6B6B6F;
+                line-height: 28px;
+            }
+            .transitionLeft {
+                animation: mymove1 1s;
+            }
+            .logo {
+                width: 180px;
+                height: 60px;
+                top: 0;
+                left: 60px;
+            }
+            .btn {
+                width: 320px;
+                height: 100px;
+                top: 200px;
+                left: -15px;
+                cursor: pointer;
+                animation: mymove1 1s;
+            }
+            .img {
+                width: 709px;
+                height: 659px;
+                top: -140px;
+                right: 0;
+                animation: mymove 1s;
+            }
+        }
+        .call {
+            position: absolute;
+            background: url("../../../static/home-banner-call.png") no-repeat;
+            background-size: cover;
+            height: 72px;
+            width: 203px;
+            right: 0;
+            top: 330px;
+            animation: mymove 1s;
+            .desc {
+                font-family: PingFangSC-Regular;
+                font-size: 20px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                line-height: 22px;
+                margin: 8px 0 10px 90px;
+            }
+            .phoneNum {
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                line-height: 16px;
+                margin: 0 0 0 77px;
+            }
+        }
+    }
+    .bannerBox {
+        height: 930px;
+    }
+    .bannerImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @keyframes mymove {
+        0% {
+            transform: translateX(1000px)
+        }
+        100% {
+            transform: translateX(0)
+        }
+    }
+    @keyframes mymove1 {
+        0% {
+            transform: translateX(-1000px)
+        }
+        100% {
+            transform: translateX(0)
+        }
+    }
+}
+
+.home-panel-type {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 138px;
+    .show-type {
+        margin-top: 116px;
+        img {
+            width: 202px;
+            height: 129px;
+        }
+        .typeName {
+            font-family: PingFangSC-Medium;
+            font-size: 20px;
+            color: #3e3e41;
+            margin: 40px 0 20px;
+        }
+        .typeText {
+            font-size: 16px;
+            color: #8e8e93;
+            width: 190px;
+            line-height: 26px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.home-panel-map {
+    background: #fafbfd;
+    padding-bottom: 132px;
+    .content {
+        font-size: 20px;
+        color: #6b6b6f;
+        letter-spacing: 0;
+        margin: 50px 0 60px;
+        text-align: center;
+    }
+    .bg {
+        width: 900px;
+        height: 760px;
+        background: url("https://media.bestjlb.com/jlbossa362f26c3196d53c1d82c5c3114d7c7a15223187412946807.gif") 0 0 no-repeat;
+        background-size: 900px 760px;
+        margin: 0 auto;
+    }
+}
+
+.home-panel-brand {
+    text-align: center;
+    position: relative;
+    .brand-list {
+        margin-top: 180px;
+        .brand-panel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .brand-wrap {
+            width: 200px;
+            height: 200px;
+            margin: -70px 25px 0 25px;
+            cursor: pointer;
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            perspective: 1000;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                backface-visibility: hidden;
+                z-index: 2;
+            }
+            .brand-text {
+                backface-visibility: hidden;
+                font-size: 13px;
+                color: #515154;
+                letter-spacing: 0;
+                line-height: 20px;
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                margin-left: -76px;
+                transform: rotateY(180deg);
+                width: 152px;
+                text-align: center;
+            }
+        }
+        .brand-wrap:hover {
+            transform: rotateY(180deg);
+        }
+    }
+    .brand-bg {
+        background: url("../../../static/home-brand-bg.png")0 0 no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 240px;
+        margin-top: -100px;
+    }
+}
+
+.home-panel-dynamic {
+    padding-bottom: 80px;
+    .danamicContainer {
+        width: 1200px;
+        margin: 60px auto;
+        display: flex;
+        justify-content: space-between;
+        .cursor {
+            cursor: pointer;
+        }
+        .title {
+            font-family: PingFangSC-Medium;
+            font-size: 18px;
+            color: #515154;
+            line-height: 18px;
+            margin-bottom: 15px;
+        }
+        .content {
+            font-size: 14px;
+            color: #8e8e93;
+            line-height: 24px;
+        }
+        .more {
+            border-radius: 5px;
+            width: 160px;
+            height: 44px;
+            margin-top: 46px;
+            font-size: 16px;
+        }
+        .showImg {
+            width: 585px;
+            height: 260px;
+            background: #f2f2f4;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        ul {
+            margin-left: 30px;
+            li {
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                cursor: pointer;
+                .itemDynamic {
+                    width: 496px;
+                }
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-right: 16px;
+                    object-fit: cover;
+                    background: #f2f2f4;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}

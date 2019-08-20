@@ -1,0 +1,124 @@
+.news-detail-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+  .article-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+    font-size: 26px;
+    color: #181819;
+    line-height: 30px;
+  }
+  .article-info {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: #8e8e93;
+    .author {
+      color: #515154;
+    }
+    .time {
+      margin: 0 20px;
+    }
+  }
+  .line {
+    width: 200px;
+    height: 4px;
+    background-color: #efefef;
+  }
+  .article-content {
+    padding: 40px 0 60px;
+    font-size: 15px;
+    line-height: 28px;
+    * {
+      max-width: 100%;
+    }
+    .ql-align-center {
+      text-align: center;
+    }
+    .ql-align-right {
+      text-align: right;
+    }
+  }
+  .share-bottom {
+    border-top: 1px solid #ececec;
+    padding: 40px 0;
+    .clearfix();
+    .wechat,
+    .sina {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      float: left;
+    }
+    .wechat {
+      margin-right: 60px;
+      background: url("/static/icon_weixin_hui@2x.png") no-repeat center;
+      background-size: contain;
+      position: relative;
+      &:hover {
+        background-image: url("/static/icon_weixin@2x.png");
+        .qrcode-wrapper {
+          display: block;
+        }
+      }
+      .qrcode-wrapper {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        z-index: 1;
+        transform: translate(-40%, -100%);
+        width: 260px;
+        height: 260px;
+        background: #ffffff;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+        display: none;
+        .qrcode {
+          width: 200px;
+          height: 200px;
+          margin: 20px 30px 6px;
+        }
+        .text {
+          font-size: 13px;
+          color: #515154;
+          text-align: center;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    .sina {
+      background: url("/static/icon_weibo_hui@2x.png") no-repeat center;
+      background-size: contain;
+      &:hover {
+        background-image: url("/static/icon_weibo@2x.png");
+      }
+    }
+    .xiaobian {
+      height: 50px;
+      line-height: 50px;
+      float: right;
+      font-size: 18px;
+      color: #3e3e41;
+    }
+  }
+  .pagination {
+    overflow: hidden;
+    text-indent: 20px;
+    .pag-btn {
+      height: 60px;
+      line-height: 60px;
+      background-color: #f6f6f6;
+      margin-bottom: 20px;
+      color: #3e3e41;
+      font-size: 16px;
+      cursor: pointer;
+      &:hover {
+        background-color: #e1e1e1;
+      }
+      &:last-child {
+        margin-bottom: 81px;
+      }
+    }
+  }
+}

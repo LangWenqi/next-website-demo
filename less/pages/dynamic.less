@@ -1,0 +1,140 @@
+.dynamic-container {
+    background: #f6f7f9;
+    .dynamic-banner {
+        width: 100%;
+        height: 600px;
+        background: url("../../static/dynamic.png") no-repeat center center/cover;
+    }
+    .dynamic-data-wrapper {
+        width: 1200px;
+        margin: -300px auto 0;
+        background: #fff;
+        border-radius: 6px;
+        box-sizing: border-box;
+        padding: 0 24px;
+        min-height: 600px;
+        .dynamic-pagination {
+            margin-top: 73px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .dynamic-title {
+            font-family: PingFangSC-Medium;
+            font-size: 20px;
+            color: #181819;
+        }
+        .dynamic-title-list {
+            padding-bottom: 12px;
+        }
+        .dynamic-content {
+            font-size: 16px;
+            color: #3E3E41;
+            line-height: 26px;
+            text-align: justify;
+        }
+        .dynamic-content-list {
+            height: 50px;
+            overflow: hidden;
+            display: -webkit-box !important;
+            -webkit-line-clamp: 2 !important;
+            -webkit-box-orient: vertical !important;
+            margin-bottom: 20px;
+        }
+        .dynamic-small {
+            font-size: 14px;
+            color: #8E8E93;
+            span {
+                margin-right: 20px;
+            }
+        }
+        .dynamic-data-title {
+            height: 90px;
+            border-bottom: 1px solid #ECECEC;
+            display: flex;
+            align-items: center;
+            .title-wrapper {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            .title-back {
+                margin-right: 12px;
+                width: 24px;
+                height: 24px;
+                background: url("../../static/dynamic_detail_back.png") no-repeat center center/contain;
+            }
+            .title-yellow {
+                font-size: 26px;
+                color: #FFA42F;
+            }
+            .title-gray {
+                font-size: 16px;
+                color: #8E8E93;
+                margin-left: 14px;
+            }
+        }
+        .dynamic-data-detail {
+            padding: 0 60px;
+            .title {
+                text-align: center;
+                font-family: PingFangSC-Medium;
+                font-size: 20px;
+                color: #181819;
+                line-height: 18px;
+                margin: 30px 0 20px;
+            }
+            .time {
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #8E8E93;
+                line-height: 14px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .content {
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                color: #3E3E41;
+                line-height: 26px;
+                img {
+                    display: block;
+                    width: 1080px;
+                    margin: 20px 0;
+                }
+                video {
+                    display: block;
+                    width: 1080px;
+                    margin: 20px 0;
+                }
+            }
+        }
+        .dynamic-data-list {
+            .dynamic-data-item {
+                display: flex;
+                align-items: center;
+                height: 183px;
+                cursor: pointer;
+                border-bottom: 1px solid #ECECEC;
+                .dynamic-data-item-img {
+                    width: 240px;
+                    height: 135px;
+                    margin-right: 20px;
+                    border-radius: 6px;
+                    background: red;
+                    flex: none;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .dynamic-data-item-content {
+                    height: 135px;
+                    flex: 1;
+                }
+            }
+        }
+    }
+}

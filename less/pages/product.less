@@ -1,0 +1,123 @@
+.product-container {
+    background: #fff;
+    img {
+        display: block;
+    }
+    .product-banner {
+        width: 100%;
+        height: 900px;
+        background: url("../../static/product-top-bg.png") no-repeat center center/cover;
+        overflow: hidden;
+        .banner-title {
+            font-size: 30px;
+            color: #FFFFFF;
+            line-height: 30px;
+            margin: 86px 0 74px;
+            text-align: center;
+        }
+        ul {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .item {
+            background: #FFFFFF;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+            height: 220px;
+            width: 308px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 110px;
+            .logo {
+                height: 82px;
+                width: 82px;
+                margin-top: -41px;
+            }
+            .title {
+                font-family: PingFangSC-Medium;
+                font-size: 18px;
+                color: #3E3E41;
+                margin: 0.16rem 0;
+            }
+            .desc {
+                font-size: 14px;
+                color: #515154;
+                line-height: 26px;
+            }
+        }
+    }
+    .product-teacher {
+        height: 900px;
+        overflow: hidden;
+        background: url("../../static/product-bottom-bg.png") no-repeat center bottom/auto 203px;
+        .teacher-title {
+            font-size: 30px;
+            color: #000;
+            line-height: 30px;
+            margin: 100px 0 115px;
+            text-align: center;
+        }
+        .content {
+            width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                font-family: PingFangSC-Medium;
+                font-size: 36px;
+                color: #3E3E41;
+                line-height: 36px;
+                margin-bottom: 46px;
+            }
+            .list {
+                display: flex;
+                .icon-title {
+                    font-family: PingFangSC-Medium;
+                    font-size: 12px;
+                    color: #3E3E41;
+                    line-height: 14px;
+                    margin-top: 14px;
+                }
+                .icon {
+                    height: 50px;
+                    width: 50px;
+                }
+                .anticon-caret-down {
+                    font-size: 10px;
+                }
+            }
+            .each {
+                text-align: center;
+                margin-right: 30px;
+                opacity: 0.3;
+            }
+            .focus {
+                text-align: center;
+                margin-right: 30px;
+            }
+            .desc {
+                font-size: 14px;
+                color: #3E3E41;
+                line-height: 24px;
+                margin-top: 46px;
+            }
+            .right {
+                img {
+                    height: 510px;
+                    width: 250px;
+                }
+            }
+            .rightFirst {
+                img {
+                    width: 656px;
+                    height: 362px;
+                }
+            }
+        }
+    }
+}

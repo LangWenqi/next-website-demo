@@ -1,0 +1,137 @@
+.about-container {
+    .about-header {
+        height: 850px;
+        background: url("https://media.bestjlb.com/jlboss8be04327b0ae3390362c71831163ae2d15235268785114499.png") no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; // .title {
+        //     text-align: center;
+        //     font-family: PingFangSC-Medium;
+        //     font-size: 60px;
+        //     color: #FFFFFF;
+        //     line-height: 50px;
+        //     margin-bottom: 40px;
+        // }
+        // .desc {
+        //     text-align: center;
+        //     font-family: PingFangSC-Medium;
+        //     font-size: 40px;
+        //     color: #FFFFFF;
+        //     line-height: 46px;
+        // }
+    }
+    .about-introduce {
+        width: 1000px;
+        margin: 0 auto 322px;
+        .title {
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            line-height: 30px;
+            margin: 286px 0 40px
+        }
+        .desc {
+            font-size: 16px;
+            color: #fff;
+            line-height: 36px;
+        }
+    }
+    .growth {
+        margin: 110px 0 160px;
+        .title {
+            text-align: center;
+            font-size: 30px;
+            color: #3E3E41;
+            line-height: 30px;
+            margin-bottom: 90px;
+        }
+        .course {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .icon_time {
+            height: 50px;
+            width: 50px;
+        }
+        .icon_circle {
+            height: 20px;
+            width: 20px;
+        }
+        .line {
+            background: #FFBC66;
+            width: 2px;
+            height: 1676px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .item {
+                display: flex;
+                align-items: center;
+                margin-top: 40px;
+                margin-right: -20px;
+                transform: translateX(-50%);
+                position: relative;
+                .info {
+                    width: 260px;
+                    position: absolute;
+                    right: -300px;
+                    .time {
+                        font-size: 14px;
+                        color: #8E8E93;
+                        line-height: 16px;
+                        margin-bottom: 12px;
+                    }
+                    .desc {
+                        font-size: 16px;
+                        color: #3E3E41;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .connect {
+                background: #FFBC66;
+                height: 2px;
+                width: 310px;
+            }
+            .item:nth-of-type(2n) {
+                transform: translateX(50%);
+                margin-right: 20px;
+                .info {
+                    left: -300px;
+                    text-align: right;
+                }
+            }
+            .item:nth-of-type(4n+1),
+            .item:nth-of-type(4n+2) {
+                .connect {
+                    width: 200px;
+                }
+            }
+        }
+        .circle {
+            background: #FFA42F;
+            border: 4px solid #FFE3C0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .avatorBorder {
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #FFBC66;
+        }
+        .avator {
+            height: 144px;
+            width: 144px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}

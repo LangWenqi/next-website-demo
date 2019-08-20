@@ -1,0 +1,69 @@
+.help-container {
+    width: 1200px;
+    margin: 24px auto 60px;
+    display: flex;
+    .tabLeft {
+        background: #FFFFFF;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.10);
+        border-radius: 6px;
+        height: 300px;
+        width: 220px;
+        margin-right: 24px;
+        overflow: hidden;
+        flex-shrink: 0;
+        position: fixed;
+        div {
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 18px;
+            color: #515154;
+            margin: 0 20px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ECECEC;
+            cursor: pointer;
+        }
+        div:last-child {
+            border-bottom: 0;
+        }
+        .current {
+            background: #FFA42F;
+            color: #fff;
+            margin: 0;
+        }
+    }
+    .content {
+        background: #FFFFFF;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.10);
+        border-radius: 6px;
+        width: 956px;
+        padding: 0 24px;
+        flex-shrink: 0;
+        margin-left: 242px;
+        .item {
+            padding: 30px 0;
+            border-bottom: 1px solid #ECECEC;
+        }
+        .item:last-child {
+            border-bottom: 0;
+        }
+        .title {
+            font-family: PingFangSC-Medium;
+            font-size: 18px;
+            color: #3E3E41;
+            margin-bottom: 24px;
+            font-weight: 900;
+        }
+        h4 {
+            font-family: PingFangSC-Medium;
+            font-size: 16px;
+            color: #212124;
+            line-height: 16px;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        h4:first-child {
+            margin: -6px 0 10px;
+        }
+    }
+}

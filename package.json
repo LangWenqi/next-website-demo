@@ -1,0 +1,34 @@
+{
+  "name": "web",
+  "scripts": {
+    "dev": "node env.dev.config.js && NODE_ENV=development PORT=3000 node server.js",
+    "build": "node env.prod.config.js && next build",
+    "build:test": "node env.test.config.js && next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "antd": "^3.1.6",
+    "babel-plugin-import": "^1.6.3",
+    "classnames": "^2.2.6",
+    "dotenv-webpack": "^1.5.7",
+    "es6-promise": "^4.2.4",
+    "express": "^4.16.3",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "next": "4.2.3",
+    "qrcodejs2": "^0.0.2",
+    "query-parse": "^2.0.0",
+    "query-string": "^5.1.0",
+    "raw-loader": "^0.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.6",
+    "postcss-loader": "^2.1.6",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2"
+  }
+}
